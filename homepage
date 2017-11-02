@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>YogoGreen</title>
+    <link rel="stylesheet" type="text/css" href="homepage.css">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <li>
+            <img class="homepageLogo" src="https://www.greenchoice.nl/images/logo.png">
+        </li>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Groene Energie</a>
+                <ul>
+                    <li><a href="#">Zonne Energie</a></li>
+                    <li><a href="#">Wind Energie</a></li>
+                    <li><a href="#">Bio Energie</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Tarieven</a></li>
+            <li><a href="#">Over Ons</a></li>
+        </ul>
+        </div>
+        <li>
+            <button id="loginButton" onclick='submit()'> INLOGGEN</button>
+        </li>
+    </nav>
+    <div class=homepageView>
+        <div class="titleSubtitleHomepage">
+            <h1 id="homepageHeader"> Zelf kiezen waar je energie vandaan komt? </h1>
+            <ul id="homepageList">
+                <li>Jouw energie: 100% lokaal opgewekt</li>
+                <li>Keuze uit bio-, wind- en zonne-energiebronnen</li>
+                <li>Vaak goedkoper dan reguliere energiemaatschappijen</li>
+            </ul>
+        </div>
+        <img class="homepageBanner" src="pictureSolar.jpeg" height="600px" width="100%">
+        <ul class="valueProp">
+            <li> 14 dagen bedenktijd</li>
+            <li>Wij regelen de overstap</li>
+            <li>100% lokale groene stroom</li>
+        </ul>
+    </div>
+</body>
+
+</html>
