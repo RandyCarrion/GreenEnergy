@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<div class="gallery">
+ <a target="_blank" href="images/carnaval.jpg">
+ <img src="images/carnaval.jpg" alt="Carnaval in Breda (2017)">
+ </a>
+ <div>Carnaval in Breda (2017)</div>
+ </div>
+
+<style type="text/css">
+
+div.gallery {
+ margin: 5px;
+ border: 1px solid #ccc;
+ border-radius: 4px;
+ float: left;
+ width: 180px;
+ background-color: #ccc
+ }
+
+div.gallery img {
+ width: 100%;
+ height: auto;
+ }
+div.desc {
+ padding: 15px;
+ text-align: center;
+ }
+
+	.responsive {
+ padding: 0 6px;
+ float: left;
+ width: 24.99999%;
+ }
+
+
+@media only screen and (max-width : 480px) {
+ .responsive {
+ width: 100%;
+ padding-bottom: 100%;
+   }
+}
+ @media only screen and (max-width : 650px) and (min-width 
+: 481px) {
+ .responsive {
+ width: 50%;
+ padding-bottom: 50%;
+  }
+}
+ @media only screen and (max-width : 1050px) and (min-width 
+: 651px) {
+ .responsive {
+ width: 33.3%;
+ padding-bottom: 33.3%;
+  }
+}
+ @media only screen and (max-width : 1290px) and (min-width 
+: 1051px) {
+ .responsive {
+ width: 25%;
+ padding-bottom: 25%;
+  }
+}
+</style>
+</body>
+</html>
