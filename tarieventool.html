@@ -4,45 +4,48 @@
 	<title>popup button home page</title>
 </head>
 <body>
-<section class="product_headline">
+<section class="topPart">
+<div class="voordelen">
+	<h1>De voordelen op een rijtje</h1>
+	<ul id="voordelen">
+		<li>Altijd een scherpe deal. Ook voor trouwe klanten.</li>
+		<li>Standaard 100% groene stroom.</li>
+		<li>Goedkoper tanken met Tankey ®.</li>
+		<li>Al je energiezaken direct geregeld met gratis Regelneef app.</li>
+		<li>Wij regelen de overstap!</li>
+	</ul>
+</div>
 <div class="calculation_tool">
-	<h1>Stap ook over op Greenchoice!</h1>
+	<h2>Stap ook over op Greenchoice!</h1>
 	<div class="product_change">
-		<div class="postcode">
+		<div class="adres">
 			<p>
-				<label class="icon_location" for="form_postcode"></label>
-				<input type="input_postcode" name="form_postcode" id="form_postcode" type="text" value="1000AA">
+				<img id="address" src="imagesVAL/postcode.png">
+				<label class="postcode" for="form_postcode"></label>
+				<input type="input_postcode" name="form_postcode" id="form_postcode" type="text" value="Postcode">
+				<label class="huisnummer" for="form_huisnummer"></label>
+				<input type="input_huisnummer" name="form_huisnummer" id="form_huisnummer" value="Huisnummer + toevoeging">
 			</p>
-			<div class="persons">
-				
-			</div>
+		</div>
+		<div class="persons">
+			<img id="personen" src="imagesVAL/persons.png">
+			<label class="icon_persons" for="form_persons"></label>
+			<select id="persons" name="persons">
+ 			<option value="1 persoon">1 persoon</option>
+    		<option active value="2 personen">2 personen</option>
+    		<option value="3 personen">3 personen</option>
+    		<option value="4+ personen">4+ personen</option>
+			</select>
+		</div>
+		<div class="verbruik">
+			<h5>Hoeveel verbruik je?</h5>
+			<img src="">
+			<label class="stroom" for="form_stroom"></label>
+			<input type="input_stroom" name="form_stroom" id="form_stroom" value="Stroom in kWh">
+			<label class="gas" for="form_gas"></label>
+			<input type="input_gas" name="form_gas" id="form_gas" value="Gas in m3">
 		</div>
 	</div>
-
-		<div class="button">
-		<h4>Hoeveel personen wonen er in het huis?</h4>
-		<ul class="numberPersons">
-			<li>
-				<label class="person-1">
-					<input value="1" type="radio" name="product_people" style="opacity: 0;">"1"
-				</label>
-			</li>
-			<li>
-				<label class="person-2">
-					<input value="2" type="radio" name="product_people" style="opacity: 0;">"2"
-				</label>
-			</li>
-			<li class="active">
-				<label class="person-3">
-					<input value="3" type="radio" name="product_people" style="opacity: 0;">"3"
-				</label>
-			</li>
-			<li>
-				<label class="person-4">
-					<input value="4" type="radio" name="product_people" style="opacity: 0;">"4+"
-				</label> 
-			</li>
-		</ul>
 		<p class="calculate">
 		<a href="tarieven.html"><button>Bereken uw groene energietarief</button></a>
 		</p>
@@ -50,12 +53,31 @@
 </div>
 </section>
 
+<div>
+	
+</div>
+
 <style type="text/css">
 	body {
-	text-rendering: optimizeLegibility;
+	text-rendering: optimizeLegibility;		
 }
-	.product_headline {
-		background-image: url("images/headerenergy.jpg");
+
+.topPart {
+	background-image: url("");
+}
+
+#voordelen {
+	padding: 6px 0;
+		margin; 0;
+		margin-left: 10%;
+		list-style: square;
+		text-align: left;
+		display: block;
+		box-sizing: border-box;
+		font-family: ff-dax-web,sans-serif;
+		color: #666;
+}
+	.calculation_tool {
 		border: 1px solid white;
 		border-radius: 8px;
 		box-shadow: 2px 2px 4px rgba(0,0,0,.15);
@@ -63,20 +85,40 @@
 		min-width: 490px;
 		padding: 10px 15px;
 		font-size: 14px;
-		position: absolute;
+		position: relative;
 		bottom; 0;
+		background-color: grey;
 	}
-
+	
+	.adres {
+		padding-right: 30px;
+		display: inline-block;
+		height: auto;
+	}
+	.persons {
+		padding-right: 30px;
+		display: inline-block;
+	}
 	.calculate {
 		text-align: center;
 	}
-	
-		
+ #address {
+		width: 4%;
+		left: 10px;
+	}
+ #personen {
+		width: 4%;
+		left: 10px;
+	}
 	div {
 		display: block;
 		box-sizing: border-box;
 	}
 	h1 {
+		font-family: ff-dax-web,sans-serif;
+		color: #666;
+	}
+	h2 {
 		padding: 6px 0;
 		margin: 0;
 		box-sizing: border-box;
@@ -90,6 +132,12 @@
 		font-family: ff-dax-web,sans-serif;
 		display: block;
 		text-align: center;
+	}
+	h5 {
+		color: #666;
+		font-family: ff-dax-web,sans-serif;
+		display: block;
+		text-align: left;
 	}
 	button {
 		background-color: orange;
