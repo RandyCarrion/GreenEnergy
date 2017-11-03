@@ -6,23 +6,20 @@ body {
     color: #666;
     text-align: center;
 }
-.groenLabel {
+.greenLabel {
 	margin: 0 0 48px;
+	padding: 0 24px;
 }
 
-/*.sun img {
-    width: 460px;
-    height: auto;
-    float: left;
-    margin: 0;
-}*/
 .row-line {
-	width: auto;
+	max-width: auto;
 	padding: 48px;
-	border-top: 2px solid #228B22; 
+	border-top: 2px solid #9CF795; 
 	text-align: left;
+    max-width: 1200px;
     margin: 0 auto;
     position: relative;
+    width: auto;
 }
 .wrapper-text {
 	width: 100%;
@@ -41,10 +38,20 @@ body {
 	float: left;
 }
 .GreenH2 {
-	padding: 6px;
 	margin: 0;
 }
 .text {
-	padding: 6px;
 	margin: auto;
+}
+.right {
+	float: right;
+	width: 350px;
+	height: 250px;
+}
+#right {
+	width: 65%;
+	height: 250px;
+	display: inline;
+	margin-right: 20px;
+	float: right;
 }
