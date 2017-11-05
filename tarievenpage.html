@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tarieven en overstappen</title>
+    <link rel="stylesheet" type="text/css" href="tarievenpage.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="tarieven.js"></script>
+
+</head>
+
+<body>
+    <h1 class="titel">Ons beste bod voor jou</h1>
+    <section class="topPart">
+        <div class="voordelen">
+            <h2>De voordelen op een rijtje</h2>
+            <ul id="voordelen">
+                <li>Altijd een scherpe deal. Ook voor trouwe klanten.</li>
+                <li>Standaard 100% groene stroom.</li>
+                <li>Goedkoper tanken met Tankey ®.</li>
+                <li>Al je energiezaken direct geregeld met gratis Regelneef app.</li>
+                <li>Bekroond tot beste energieleverancier volgens Consumentenbond</li>
+                <li>Wij regelen de overstap!</li>
+            </ul>
+        </div>
+        <div class="calculation_tool">
+            <h2 id="button">Stap ook over op Greenchoice!</h2>
+            <div class="product_change">
+                <form class="adres">
+                    <p>
+                        <img id="address" src="imagesVAL/postcode.png">
+                        <label class="postcode" for="form_postcode"></label>
+                        <input type="input_postcode" name="form_postcode" id="form_postcode" type="text" placeholder="Postcode">
+                        <label class="huisnummer" for="form_huisnummer"></label>
+                        <input type="input_huisnummer" name="form_huisnummer" id="form_huisnummer" placeholder="Huisnummer + toevoeging">
+                    </p>
+                </form>
+            </div>
+            <div class="persons">
+                <p>
+                    <img id="personen" src="imagesVAL/persons.png">
+                    <label class="icon_persons" for="form_persons"></label>
+                    <select id="persons" name="persons">
+                        <option value="1">1 persoon</option>
+                        <option value="2">2 personen</option>
+                        <option value="3">3 personen</option>
+                        <option value="4">4+ personen</option>
+                    </select>
+                </p>
+            </div>
+            <div class="verbruik">
+                <p>
+                    <img id="stroom" src="imagesVAL/stroom.png">
+                    <label class="stroom" for="form_stroom"></label>
+                    <input type="input_stroom" name="form_stroom" id="form_stroom" placeholder="Stroom in kWh">
+                    <img id="gas" src="imagesVAL/gas.png">
+                    <label class="gas" for="form_gas"></label>
+                    <input type="input_gas" name="form_gas" id="form_gas" placeholder="Gas in m3">
+                </p>
+            </div>
+            <br>
+            <div>
+                <p class="calculate">
+                    <a href=""></a>
+                        <button id="tarieftool">Bereken uw groene energietarief</button>
+                    </a>
+                </p>
+            </div>
+        </div>
+    </section>
+    <div>
+        <h1 class="titel">Voordelige groene stroom en gas zonder poespas.</h1>
+        <h5 id="info">Bij Green Source geloven wij dat het regelen van je energie eenvoudiger en voordeliger kan. We voegen de daad bij het woord. Al sinds 2002, dag in dag uit. En dat levert jou direct veel voordeel op. En ons blije en tevreden klanten. Mooi toch?</h5>
+    </div>
+    <div class="blocks">
+        <div id="groenestroom" style="display: block">
+            <img src="imagesVAL/groenestroom.png">
+            <h5 class="blockText">Altijd groen en voordelig</h5>
+            <p>Grijs of groen? Het werkt precies hetzelfde. Je merkt geen verschil. Maar ons milieu wel. Daarom hebben wij alleen groene stroom. En daar betaal je niets extra’s voor. Dat vinden wij niet meer dan logisch.
+            </p>
+        </div>
+        <div id="klanten" style="display: block">
+            <img src="imagesVAL/klanten.png">
+            <h5 class="blockText">Een dikke voldoende van de Consumentenbond.</h5>
+            <p>Maximaal voordeel voor onze klanten, dat is onze ambitie. En dat doen we door dingen slim en goed te regelen. En daar worden onze klanten blij van. Dat zien we aan de positieve reviews. En daar worden wij weer heel erg blij van.
+            </p>
+        </div>
+        <div id="app" style="display: block">
+            <img src="imagesVAL/app.png">
+            <h5 class="blockText">Energiezaken altijd en overal geregeld.</h5>
+            <p>Met onze Regelneef app ben je altijd op de hoogte van jouw energiezaken én regel je alles zo vanuit je broekzak. Hij kan niet je salaris verhogen, maar wél je termijnbedrag verlagen. En daarmee voorkom je onaangename verrassingen op je jaarrekening. Handig!
+            </p>
+        </div>
+    </div>
+
+<script type="text/javascript" src="tarieven.js"></script>
+
+</body>
+
+</html>
