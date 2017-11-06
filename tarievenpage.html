@@ -3,15 +3,15 @@
 
 <head>
     <title>Tarieven en overstappen</title>
-    <link rel="stylesheet" type="text/css" href="tarievenpage.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="tarieven.js"></script>
-
+    <script type="text/javascript" src="scrollup-master/dist/jquery.scrollUp.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="tarievenpage.css">
 </head>
 
 <body>
     <h1 class="titel">Ons beste bod voor jou</h1>
-    <section class="topPart">
+    <section id="topPart">
         <div class="voordelen">
             <h2>De voordelen op een rijtje</h2>
             <ul id="voordelen">
@@ -62,39 +62,89 @@
             <div>
                 <p class="calculate">
                     <a href=""></a>
-                        <button id="tarieftool">Bereken uw groene energietarief</button>
+                    <button id="tarieftool">Bereken uw groene energietarief</button>
                     </a>
                 </p>
             </div>
         </div>
     </section>
-    <div>
+    <div id="poespas">
         <h1 class="titel">Voordelige groene stroom en gas zonder poespas.</h1>
-        <h5 id="info">Bij Green Source geloven wij dat het regelen van je energie eenvoudiger en voordeliger kan. We voegen de daad bij het woord. Al sinds 2002, dag in dag uit. En dat levert jou direct veel voordeel op. En ons blije en tevreden klanten. Mooi toch?</h5>
+        <h3 class="info">Bij Green Source geloven wij dat het regelen van je energie eenvoudiger en voordeliger kan. We voegen de daad bij het woord. Al sinds 2002, dag in dag uit. En dat levert jou direct veel voordeel op. En ons blije en tevreden klanten. Mooi toch?</h5>
     </div>
-    <div class="blocks">
-        <div id="groenestroom" style="display: block">
-            <img src="imagesVAL/groenestroom.png">
-            <h5 class="blockText">Altijd groen en voordelig</h5>
-            <p>Grijs of groen? Het werkt precies hetzelfde. Je merkt geen verschil. Maar ons milieu wel. Daarom hebben wij alleen groene stroom. En daar betaal je niets extra’s voor. Dat vinden wij niet meer dan logisch.
+    <div id="infoblock">
+        <div class="blocks">
+        <div class="blockImage">
+        <img src="imagesVAL/groenestroom.png">
+        </div>
+        <div class="blockText">
+            <h4 class="blockTitle">Altijd groen en voordelig</h4>
+            <p class="blockParagraph">Grijs of groen? Het werkt precies hetzelfde. Je merkt geen verschil. Maar ons milieu wel. Daarom hebben wij alleen groene stroom. En daar betaal je niets extra’s voor. Dat vinden wij niet meer dan logisch. Conclusie: goed voor jou en voor de planeet! 
             </p>
         </div>
-        <div id="klanten" style="display: block">
+        </div>
+        <div class="blocks">
+            <div class="blockImage">
             <img src="imagesVAL/klanten.png">
-            <h5 class="blockText">Een dikke voldoende van de Consumentenbond.</h5>
-            <p>Maximaal voordeel voor onze klanten, dat is onze ambitie. En dat doen we door dingen slim en goed te regelen. En daar worden onze klanten blij van. Dat zien we aan de positieve reviews. En daar worden wij weer heel erg blij van.
+            </div>
+            <div class="blockText">
+            <h4 class="blockTitle">Een dikke voldoende van de Consumentenbond.</h4>
+            <p class="blockParagraph">Maximaal voordeel voor onze klanten, dat is onze ambitie. En dat doen we door dingen slim en goed te regelen. En daar worden onze klanten blij van. Dat zien we aan de positieve reviews. En daar worden wij weer heel erg blij van.
             </p>
+            </div>
         </div>
-        <div id="app" style="display: block">
+        <div class="blocks">
+            <div class="blockImage">
             <img src="imagesVAL/app.png">
-            <h5 class="blockText">Energiezaken altijd en overal geregeld.</h5>
-            <p>Met onze Regelneef app ben je altijd op de hoogte van jouw energiezaken én regel je alles zo vanuit je broekzak. Hij kan niet je salaris verhogen, maar wél je termijnbedrag verlagen. En daarmee voorkom je onaangename verrassingen op je jaarrekening. Handig!
+            </div>
+            <div class="blockText">
+            <h4 class="blockTitle">Energiezaken altijd en overal geregeld.</h4>
+            <p class="blockParagraph">Met onze Regelneef app ben je altijd op de hoogte van jouw energiezaken én regel je alles zo vanuit je broekzak. Hij kan niet je salaris verhogen, maar wél je termijnbedrag verlagen. En daarmee voorkom je onaangename verrassingen op je jaarrekening. Handig!
             </p>
+            </div>
         </div>
     </div>
-
-<script type="text/javascript" src="tarieven.js"></script>
-
+    <div class="overstappen">
+        <h1 class="titel">Overstappen is vlot en eenvoudig</h1>
+        <h3 class="info">Wij houden je tijdens de overstap steeds per e-mail en sms op de hoogte.<br>Je hebt altijd 14 dagen bedenktijd. Hieronder zie je wat we vanaf nu voor je gaan doen en wanneer.</h3>
+    </div>
+    <div id="overstapPlan">
+        <div class="steppingStone">
+            <div class="stoneImage">
+                <img src="imagesVAL/email.png">
+            </div>
+            <div class="stoneText">
+               <p><b>Welkom!</b><br>Je krijgt van ons een e-mail ter bevestiging met jouw energiecontract en inloggegevens voor Mijn greenchoice.nl en onze Regelneef app.
+            </div>            
+        </div>
+        <div class="steppingStone">
+            <div class="stoneImage">
+                <img src="imagesVAL/trash.png">
+            </div>
+            <div class="stoneText">
+                <p><b>Opzeggen contract</b><br>We zeggen je vorige contract voor je op. Hoef je zelf niets voor te regelen. Doen we gewoon.
+                </p>
+            </div>            
+        </div>
+        <div class="steppingStone">
+            <div class="stoneImage">
+                <img src="imagesVAL/electricity.png">
+            </div>
+            <div class="stoneText">
+                <p><b>Meterstanden</b><br>We zeggen je vorige contract voor je op. Hoef je zelf niets voor te regelen. Doen we gewoon.
+                </p>
+            </div>            
+        </div>
+        <div class="steppingStone">
+            <div class="stoneImage">
+                <img src="imagesVAL/house.png">
+            </div>
+            <div class="stoneText">
+                <p><b>Start levering</b><br>We starten met de levering van onze 100% groene en voordelige stroom en gas.
+                </p>
+            </div>            
+        </div>
+    </div>
 </body>
 
 </html>

@@ -1,144 +1,192 @@
+body {
+    background-image: url("pictureSolar.jpeg");
+}
 
-    body {
-        background-image: url("pictureSolar.jpeg");
-    }
+.titel {
+    color: white;
+    text-align: center;
+    margin-top: 5%;
+    font-family: ff-dax-web, sans-serif;
+}
 
-    .titel {
-        color: white;
-        text-align: center;
-        margin-top: 5%;
-        font-family: ff-dax-web, sans-serif;
-    }
+#topPart {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5%;
+    margin-bottom: 2%;
+}
 
-    .topPart {
-        display: flex;
-        margin-top: 10%;
-        margin-bottom: 20%;
-    }
+.voordelen {
+    margin-left: 10%;
+    list-style: square;
+    text-align: left;
+    display: block;
+    font-family: ff-dax-web, sans-serif;
+    color: white;
+    width: 5%;
+    min-width: 490px;
+    float: left;
+}
 
-    .voordelen {
-        margin-left: 10%;
-        list-style: square;
-        text-align: left;
-        display: block;
-        font-family: ff-dax-web, sans-serif;
-        color: white;
-        width: 5%;
-        min-width: 490px;
-        float: left;
-    }
+.calculation_tool {
+    border: 1px solid white;
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .15);
+    width: 10%;
+    min-width: 490px;
+    padding: 10px 8px;
+    font-size: 14px;
+    position: relative;
+    text-align: left;
+    bottom: 0;
+    background-color: white;
+    float: left;
+    margin-left: 15%;
+}
 
-    .calculation_tool {
-        border: 1px solid white;
-        border-radius: 8px;
-        box-shadow: 2px 2px 4px rgba(0, 0, 0, .15);
-        width: 10%;
-        min-width: 490px;
-        padding: 10px 8px;
-        font-size: 14px;
-        position: relative;
-        text-align: left;
-        bottom: 0;
-        background-color: white;
-        float: left;
-        margin-left: 40px;
-    }
+.adres {
+    padding-right: 30px;
+    display: inline-block;
+    height: auto;
+}
 
-    .adres {
-        padding-right: 30px;
-        display: inline-block;
-        height: auto;
-    }
+.persons {
+    padding-right: 30px;
+    display: inline-block;
+}
 
-    .persons {
-        padding-right: 30px;
-        display: inline-block;
-    }
+.calculate {
+    text-align: center;
+}
 
-    .calculate {
-        text-align: center;
-    }
+#address {
+    width: 4%;
+    left: 10px;
+}
 
-    #address {
-        width: 4%;
-        left: 10px;
-    }
+#personen {
+    width: 4%;
+    left: 10px;
+}
 
-    #personen {
-        width: 4%;
-        left: 10px;
-    }
+#gas {
+    width: 4%;
+    left: 10px;
+}
 
-    #gas {
-        width: 4%;
-        left: 10px;
-    }
+#stroom {
+    width: 4%;
+    left: 10px;
+}
 
-    #stroom {
-        width: 4%;
-        left: 10px;
-    }
+h2 {
+    color: white;
+    margin-left: 25px;
+}
 
-    div.block {
-        margin: 5px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        float: left;
-        width: 180px;
-        background-color: #ccc
-    }
+h2#button {
+    padding: 6px 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: block;
+    text-align: center;
+    color: #666;
+    font-family: ff-dax-web, sans-serif;
+}
 
-    div.blocks img {
-        width: 10%;
-        height: auto;
-    }
+button {
+    background-color: orange;
+    border-radius: 15px;
+    color: #666;
+    font-family: ff-dax-web, sans-serif;
+}
 
-    div.desc {
-        padding: 15px;
-        text-align: center;
-    }
+.poespas {
+    display: flex;
+    justify-content: center;
+}
 
-    h2 {
-        color: white;
-        margin-left: 25px;
-    }
+.info {
+    color: white;
+    font-family: ff-dax-web, sans-serif;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 5%;
+}
 
-    h2#button {
-        padding: 6px 0;
-        margin: 0;
-        box-sizing: border-box;
-        display: block;
-        text-align: center;
-        color: #666;
-        font-family: ff-dax-web, sans-serif;
-    }
+#infoblock {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
 
-    h4 {
-        color: #666;
-        font-family: ff-dax-web, sans-serif;
-        display: block;
-        text-align: center;
-    }
+.blocks {
+    width: 400px;
+    display: block;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    float: left;
+    margin: 10px;
+}
 
-    h5 {
-        color: #666;
-        font-family: ff-dax-web, sans-serif;
-        display: block;
-        text-align: left;
-    }
+h4.blockTitle {
+    text-align: center;
+}
 
-    button {
-        background-color: orange;
-        border-radius: 15px;
-        color: #666;
-        font-family: ff-dax-web, sans-serif;
-    }
+p.blockParagraph {
+    padding: 15px;
+    text-align: left;
+}
 
-    #info {
-        color: white;
-        font-family: ff-dax-web, sans-serif;
-        text-align: left;
-        width: 50%;
-        margin: 0 auto;
-    }
-    
+img.blockImage {
+    width: 20%;
+    text-align: center;
+    position: relative;
+}
+
+.overstappen::before {
+    clear: both
+}
+
+#overstapPlan {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+.steppingStone {
+    width: 400px;
+    display: block;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    float: left;
+    margin: 10px;
+}
+
+p.stoneText {
+    padding: 15px;
+    text-align: left;
+}
+
+div.stoneImage {
+    max-width: 20px;
+    max-height: 20px;
+    text-align: center;
+    position: relative;
+}
+
+#scrollUp {
+    bottom: 20px;
+    right: 20px;
+    border-radius: 6px;
+    padding: 10px 20px;
+    background: white;
+    color: black;
+}
+
+#scrollUp:hover {
+    background-color: maroon;
+}

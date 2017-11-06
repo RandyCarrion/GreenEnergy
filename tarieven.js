@@ -1,23 +1,3 @@
-// function stroom(x) 
-// }
-
-
-// function gas(y) {
-// 	return y * 0.20 
-// }
-
-// console.log(stroom(400));
-// console.log(gas(250));
-
-
-
-
-
-
-
-	
-
-//////////////////////
 
 $(document).ready(function() {
 	$('#tarieftool').click(function() {
@@ -31,6 +11,16 @@ $(document).ready(function() {
 })
 
 
-//     	$('#tarieftool').serializeArray();
-// 	}
-// }
+$(function () {
+	$.scrollUp({
+    scrollName: 'scrollUp', 
+    topDistance: '40', 
+    topSpeed: 300, 
+    animation: 'fade', 
+    animationInSpeed: 200, 
+    animationOutSpeed: 200, 
+    scrollText: 'Terug naar boven', 
+    activeOverlay: false, 
+  });
+});
+
