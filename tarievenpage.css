@@ -1,0 +1,358 @@
+body {
+    background-image: url("pictureSolar.jpeg");
+    height: 100%;
+    font-family: 'Work Sans';
+}
+
+nav {
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    z-index: 300;
+    background-color: white;
+}
+
+
+nav ul {
+    margin-left: 120px;
+}
+
+
+nav li {
+    height: 50px;
+    width: 150px;
+    /* Each menu item is 150px wide */
+    float: left;
+    /* This lines up the menu items horizontally */
+    text-align: center;
+    /* All text is placed in the center of the box */
+    list-style: none;
+    /* Removes the default styling (bullets) for the list */
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    font-size: 12px;
+    border-style: solid;
+    border-color: white;
+}
+
+nav ul li:hover {
+    color: purple;
+    border-color: green;
+    border-radius: 50px;
+    z-index: 100;
+    background-color: white;
+}
+
+nav a {
+    padding: 18px 0;
+    /* Adds a padding on the top and bottom so the text appears centered vertically */
+    color: green;
+    /* Text color is white */
+    display: block;
+    text-decoration: none;
+}
+
+#loginButton {
+    padding: auto auto;
+    /* Adds a padding on the top and bottom so the text appears centered vertically */
+    color: white;
+    /* Text color is white */
+    display: block;
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    right: 20px;
+    border-radius: 50px;
+    margin-top: 15px;
+    background-color: #e6407c;
+    border-style: none;
+}
+
+#loginButton:hover {
+    background-color: green;
+}
+
+
+nav li ul {
+    display: none;
+    /* Hides the drop-down menu */
+    height: auto;
+    margin: 0;
+    /* Aligns drop-down box underneath the menu item */
+    padding: 0;
+    /* Aligns drop-down box underneath the menu item */
+}
+
+nav li:hover ul {
+    display: block;
+    /* Displays the drop-down box when the menu item is hovered over */
+}
+
+.topnav .icon {
+    display: none;
+}
+
+.homepageLogo {
+    position: absolute;
+    width: 80px;
+    height: 40px;
+    top: 20px;
+}
+
+.titel {
+    color: white;
+    text-align: center;
+    margin-top: 10%;
+}
+
+#topPart {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5%;
+    margin-bottom: 10%;
+}
+
+.voordelen {
+    margin-left: 10%;
+    list-style: square;
+    text-align: left;
+    display: block;
+    color: white;
+    width: 5%;
+    min-width: 490px;
+    float: left;
+}
+
+.calculation_tool {
+    border: 1px solid white;
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .15);
+    width: 10%;
+    min-width: 490px;
+    padding: 10px 8px;
+    font-size: 14px;
+    position: relative;
+    text-align: left;
+    bottom: 0;
+    background-color: white;
+    float: left;
+    margin-left: 15%;
+}
+
+.adres {
+    padding-right: 30px;
+    display: inline-block;
+    height: auto;
+}
+
+.persons {
+    padding-right: 30px;
+    display: inline-block;
+}
+
+.calculate {
+    text-align: center;
+}
+
+#address {
+    width: 4%;
+    left: 10px;
+}
+
+#personen {
+    width: 4%;
+    left: 10px;
+}
+
+#gas {
+    width: 4%;
+    left: 10px;
+}
+
+#stroom {
+    width: 4%;
+    left: 10px;
+}
+
+h2 {
+    color: white;
+    margin-left: 25px;
+}
+
+h2#button {
+    padding: 6px 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: block;
+    text-align: center;
+    color: #666;
+}
+
+button {
+    background-color: orange;
+    border-radius: 15px;
+    color: #666;
+}
+
+.poespas {
+    display: flex;
+    justify-content: center;
+}
+
+.info {
+    color: white;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 5%;
+}
+
+#infoblock {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+.blocks {
+    width: 400px;
+    display: block;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    float: left;
+    margin: 10px;
+}
+
+h4.blockTitle {
+    text-align: center;
+}
+
+p.blockParagraph {
+    padding: 15px;
+    text-align: left;
+}
+
+img.blockImage {
+    width: 20%;
+    text-align: center;
+    position: relative;
+}
+
+.overstappen::before {
+    clear: both;
+}
+
+#overstapPlan {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+.steppingStone {
+    width: 400px;
+    display: block;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    float: left;
+    margin: 10px;
+}
+
+p.stoneText {
+    padding: 15px;
+    text-align: left;
+}
+
+.stoneImage {
+    width: 60px;
+    height: 80px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+.icons {
+    width: 60px;
+    margin: 0 auto;
+    vertical-align: middle;
+}
+
+#scrollUp {
+    bottom: 20px;
+    right: 20px;
+    border-radius: 6px;
+    padding: 10px 20px;
+    background: white;
+    color: black;
+}
+
+#scrollUp:hover {
+    background-color: green;
+}
+
+footer {
+    width: 100%;
+    height: 150px;
+    margin: 0;
+    background-color: #3f3f3f;
+    color: #d1cccc;
+    text-align: center;
+    margin: auto;
+    display: inline-block;
+}
+
+.footerBox {
+    display: inline-block;
+    padding: 30px;
+}
+
+.footerBox p {
+    line-height: 20px 0px;
+    margin: 0;
+    font-size: 12px;
+}
+
+.footerBox h4 {
+    font-size: 14px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .topnav ul li {
+        display: none;
+    }
+    .topnav .icon {
+        text-align: center;
+        display: block;
+    }
+    #loginButton {
+        right: 0px;
+        top: 20px;
+        position: absolute;
+        margin-top: 0;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .topnav ul li.responsive {
+        position: relative;
+    }
+    .topnav ul li.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive ul li {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    footer {
+        position: relative;
+        top: 90px;
+        width: 100%;
+    }
+}
