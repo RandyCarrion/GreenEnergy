@@ -3,15 +3,15 @@ body {
 }
 
 nav {
+
+    position: fixed;
+    top: 0;
     width: 100%;
-    height: 50px;
     margin: 0;
-    /* Ensures there is no space between sides of the screen and the menu */
-    z-index: 99;
-    /* Makes sure that your menu remains on top of other page elements */
-    position: relative;
+    z-index: 300;
     background-color: white;
 }
+
 
 nav ul {
     margin-left: 120px;
@@ -32,6 +32,18 @@ nav li {
     margin: 0;
     background-color: white;
     font-size: 12px;
+    border-style: solid;
+    border-color: white;
+
+}
+
+nav ul li:hover {
+    color: purple;
+    border-color: green;
+     border-radius: 50px;
+     z-index: 100;
+     background-color: white;
+   
 }
 
 nav a {
@@ -40,6 +52,8 @@ nav a {
     color: green;
     /* Text color is white */
     display: block;
+    text-decoration: none;
+
 }
 
 #loginButton {
@@ -51,10 +65,15 @@ nav a {
     width: 100px;
     height: 30px;
     position: absolute;
-    right: 0px;
+    right: 20px;
     border-radius: 50px;
     margin-top: 15px;
     background-color: #e6407c;
+    border-style: none;
+}
+
+#loginButton:hover {
+    background-color: green;
 }
 
 
@@ -73,31 +92,29 @@ nav li:hover ul {
     /* Displays the drop-down box when the menu item is hovered over */
 }
 
+.topnav .icon {
+    display: none;
+}
+
 .homepageLogo {
     position: absolute;
-    width: 100px;
-    height: 50px;
-    margin-bottom: 10px;
-}
-
-footer {
-    width: 100%;
-    height: 150px;
-    margin: 0;
-    background-color: #3f3f3f;
-    color: #d1cccc;
-    text-align: center;
-    margin: auto;
-    display: inline-block;
+    width: 80px;
+    height: 40px;
+    top: 20px;
 }
 
 
-/* --- Nav & footer ---> homepageView */
+
+
+
+/* --- Nav ---> homepageView */
 
 #homepageHeader {
     font-size: 40px;
 }
+
 #berekenButton1 {
+    position: absolute;
     color: white;
     display: block;
     width: 200px;
@@ -107,12 +124,19 @@ footer {
     font-size: 16px;
     margin-left: 40px;
     margin-top: 0px;
+    text-decoration: none;
+    border-style: none;
+    font-weight: lighter;
+    z-index: 200;
+}
+
+#berekenButton1:hover {
+    background-color: green;
 }
 
 .homepageView {
     position: relative;
     margin: 0;
-
 }
 
 
@@ -125,28 +149,6 @@ footer {
     font-style: bold;
 }
 
-.valuePropUl {
-    position: relative;
-    margin: 0;
-    width: 100%;
-    background-color: green;
-    height: 50px;
-    text-align: center;
-}
-
-.valuePropUl li {
-    display: absolute;
-    float: left;
-    padding: auto auto;
-    width: 450px;
-    text-align: center;
-    list-style-type: none;
-    background-color: green;
-    color: white;
-    margin-top: 10px;
-    display: inline-block;
-}
-
 .popup-calculation {
     color: white;
     width: 40%;
@@ -157,45 +159,36 @@ footer {
     line-height: 50px;
     left: 100px;
     top: 200px;
-    line-height: 20px;
+    line-height: 20px
 }
 
-.popup-calculation ul li{
+.popup-calculation ul li {
     color: white;
     list-style-type: none;
 }
 
-#subtitle {
+.scroll-down {
+    opacity: 1;
+    -webkit-transition: all .5s ease-in 3s;
+    transition: all .5s ease-in 3s;
+}
+
+.scroll-down {
     position: absolute;
-    font-size: 30px;
-    font-weight: 10px;
-    left: 50px;
-    padding:0;
-    margin:0;
-}
-
-.scroll-down {
-  opacity: 1;
-  -webkit-transition: all .5s ease-in 3s;
-  transition: all .5s ease-in 3s;
-}
-
-.scroll-down {
-  position: absolute;
-  bottom: 300px;
-  left: 50%;
-  margin-left: -16px;
-  display: block;
-  width: 32px;
-  height: 32px;
-  border: 2px solid #FFF;
-  background-size: 14px auto;
-  border-radius: 50%;
-  z-index: 2;
-  -webkit-animation: bounce 2s infinite 2s;
-  animation: bounce 2s infinite 2s;
-  -webkit-transition: all .2s ease-in;
-  transition: all .2s ease-in;
+    bottom: 200px;
+    left: 50%;
+    margin-left: -16px;
+    display: block;
+    width: 32px;
+    height: 32px;
+    border: 2px solid #FFF;
+    background-size: 14px auto;
+    border-radius: 50%;
+    z-index: 2;
+    -webkit-animation: bounce 2s infinite 2s;
+    animation: bounce 2s infinite 2s;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
 }
 
 .scroll-down:before {
@@ -212,33 +205,57 @@ footer {
 }
 
 @keyframes bounce {
-  0%,
-  100%,
-  20%,
-  50%,
-  80% {
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0);
-  }
-  40% {
-    -webkit-transform: translateY(-10px);
-    -ms-transform: translateY(-10px);
-    transform: translateY(-10px);
-  }
-  60% {
-    -webkit-transform: translateY(-5px);
-    -ms-transform: translateY(-5px);
-    transform: translateY(-5px);
-  }
+    0%,
+    100%,
+    20%,
+    50%,
+    80% {
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        -webkit-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+    60% {
+        -webkit-transform: translateY(-5px);
+        -ms-transform: translateY(-5px);
+        transform: translateY(-5px);
+    }
 }
 
+
+
 /* --- homepageView --->valueProp  */
+
+
+.valuePropUl {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    background-color: green;
+    color: #d1cccc;
+    text-align: center;
+    margin: 0;
+}
+
+.valuePropUl li {
+    display: inline-block;
+    padding: 15px 30px;
+    color: white;
+    margin: auto;
+}
+
 .theWhy {
     display: relative;
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin: 100px auto;
+    width: 800px;
+    margin-bottom: 75px;
+
 }
 
 .theWhy h2 {
@@ -247,24 +264,26 @@ footer {
 
 .theWhy p {
     font-size: 18px;
-    padding: 0px 400px;
     font-weight: lighter;
     color: grey;
     line-height: 150%;
 }
 
-#berekenButton2 {
+
+#berekenButton3 {
     color: white;
-    display: block;
     width: 200px;
     height: 50px;
     border-radius: 50px;
     background-color: #e6407c;
     font-size: 16px;
-    display: absolute;
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 0px;
+    text-decoration: none;
+    border-style: none;
+    font-weight: lighter;
+}
+
+#berekenButton3:hover {
+    background-color: green;
 }
 
 
@@ -283,10 +302,8 @@ footer {
 }
 
 
-}
-div {
-    display: block;
-    box-sizing: border-box;
+
+
 }
 h2 {
     padding: 6px 0;
@@ -296,6 +313,8 @@ h2 {
     text-align: center;
     color: #666;
 }
+
+
 
 
 
@@ -324,4 +343,73 @@ footer {
 
 .footerBox h4 {
     font-size: 14px;
+}
+
+
+/* When the screen is less than 600 pixels wide */
+@media screen and (max-width: 600px) {
+  .topnav ul li {display: none;}
+  .topnav .icon {
+    text-align: center;
+    display: block;
+  }
+  #loginButton { 
+    right: 0px;
+    top: 20px;
+    position: absolute;
+    margin-top: 0;
+    display: block;
+   }
+   .homepageView {display: none;}
+
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav ul li.responsive {position: relative;}
+  .topnav ul li.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive ul li {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .theWhy {
+    display: relative;
+    text-align: center;
+    margin: 100px 20px;
+    width: 400px;
+    margin-bottom: 0px;
+
+}
+
+  .theWhy h2 {
+    position: relative;
+    top: 55px;
+    font-size: 16px;
+}
+
+.theWhy p {
+    font-size: 12px;
+    font-weight: lighter;
+    color: grey;
+    line-height: 100%;
+}
+.valuePropUl li {
+    display: block;
+    padding: 0;
+    color: white;
+    margin: auto;
+    font-size: 12px;
+}
+footer {
+    position: relative;
+    top: 90px;
+    width: 100%;
+}
+
 }
