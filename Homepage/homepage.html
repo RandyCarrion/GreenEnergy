@@ -5,6 +5,10 @@
     <title>YogoGreen</title>
     <link rel="stylesheet" type="text/css" href="homepage.css">
     <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+     <script type="text/javascript" src="scrollup-master/dist/jquery.scrollUp.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="tarievenpage.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
 
 <body>
@@ -12,14 +16,20 @@
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
         <img class="homepageLogo" src="https://www.greenchoice.nl/images/logo.png">
         <ul>
-            <li><a href="tarieven.html">Tarieven</a></li>
+            <li><a href="tarievenpage.html">Tarieven</a>
+                <ul>
+                    <li><a href="tarievenpage.html#besteBod">Ons beste bod</a></li>
+                    <li><a href="tarievenpage.html#poespas">Voordelig groen</a></li>
+                    <li><a href="tarievenpage.html#overstap">Overstappen</a></li>
+                </ul>
+            </li>
             <li><a href="overons.html">Over Ons</a></li>
             <li><a href=homepage.html>Home</a></li>
             <li><a href="groeneenergie.html">Groene Energie</a>
                 <ul>
-                    <li><a href="groeneenergie#zonneenergie">Zonne Energie</a></li>
-                    <li><a href="groeneenergie#windenergie">Wind Energie</a></li>
-                    <li><a href="groeneenergie#bioenergie">Bio Energie</a></li>
+                    <li><a href="groeneenergie.html#zonneenergie">Zonne Energie</a></li>
+                    <li><a href="groeneenergie.html#windenergie">Wind Energie</a></li>
+                    <li><a href="groeneenergie.html#bioenergie">Bio Energie</a></li>
                 </ul>
             </li>
             
@@ -73,6 +83,24 @@ function myFunction() {
         x.className = "topnav";
     }
 }
+
+
+    $(function () {
+    $.scrollUp({
+    scrollName: 'scrollUp', 
+    topDistance: '40', 
+    topSpeed: 300, 
+    animation: 'fade', 
+    animationInSpeed: 200, 
+    animationOutSpeed: 200, 
+    scrollText: 'Terug naar boven', 
+    activeOverlay: false, 
+  });
+});
+</script>
+
+
+
 </script>
 
 </body>

@@ -227,6 +227,18 @@ nav li:hover ul {
 }
 
 
+#scrollUp {
+    bottom: 20px;
+    right: 20px;
+    border-radius: 6px;
+    padding: 10px 20px;
+    background: white;
+    color: black;
+}
+
+#scrollUp:hover {
+    background-color: green;
+}
 
 /* --- homepageView --->valueProp  */
 
@@ -343,6 +355,19 @@ footer {
 
 .footerBox h4 {
     font-size: 14px;
+}
+
+#scrollUp {
+    bottom: 20px;
+    right: 20px;
+    border-radius: 6px;
+    padding: 10px 20px;
+    background: white;
+    color: black;
+}
+
+#scrollUp:hover {
+    background-color: green;
 }
 
 
