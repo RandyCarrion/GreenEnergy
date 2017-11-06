@@ -7,10 +7,38 @@
     <script type="text/javascript" src="tarieven.js"></script>
     <script type="text/javascript" src="scrollup-master/dist/jquery.scrollUp.min.js"></script>
     <link rel="stylesheet" type="text/css" href="tarievenpage.css">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
-    <h1 class="titel">Ons beste bod voor jou</h1>
+        <nav class="topnav" id="myTopnav">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        <img class="homepageLogo" src="https://www.greenchoice.nl/images/logo.png">
+        <ul>
+            <li><a href=homepage.html>Home</a></li>
+            <li><a href="tarievenpage.html">Tarieven</a>
+                <ul>
+                    <li><a href="#besteBod">Ons beste bod</a></li>
+                    <li><a href="#poespas">Voordelig groen</a></li>
+                    <li><a href="#overstap">Overstappen</a></li>
+                </ul>
+            </li>
+            <li><a href="overons.html">Over Ons</a></li>
+            <li><a href="groeneenergie.html">Groene Energie</a>
+                <ul>
+                    <li><a href="groeneenergie.hmtl#zonneenergie">Zonne Energie</a></li>
+                    <li><a href="groeneenergie.hmtl#windenergie">Wind Energie</a></li>
+                    <li><a href="groeneenergie.hmtl#bioenergie">Bio Energie</a></li>
+                </ul>
+            </li>
+            
+            <button id="loginButton" onclick="window.location='homepage.html';"> INLOGGEN</button>
+        </ul>
+        </div>
+    </nav>
+
+    <h1 class="titel" id="besteBod">Ons beste bod voor jou</h1>
     <section id="topPart">
         <div class="voordelen">
             <h2>De voordelen op een rijtje</h2>
@@ -70,7 +98,7 @@
     </section>
     <div id="poespas">
         <h1 class="titel">Voordelige groene stroom en gas zonder poespas.</h1>
-        <h3 class="info">Bij Green Source geloven wij dat het regelen van je energie eenvoudiger en voordeliger kan. We voegen de daad bij het woord. Al sinds 2002, dag in dag uit. En dat levert jou direct veel voordeel op. En ons blije en tevreden klanten. Mooi toch?</h5>
+        <h3 class="info">Bij Green Choice geloven wij dat het regelen van je energie eenvoudiger en voordeliger kan. We voegen de daad bij het woord. Al sinds 2002, dag in dag uit. En dat levert jou direct veel voordeel op. En ons blije en tevreden klanten. Mooi toch?</h5>
     </div>
     <div id="infoblock">
         <div class="blocks">
@@ -104,14 +132,14 @@
             </div>
         </div>
     </div>
-    <div class="overstappen">
+    <div class="overstappen" id="overstap">
         <h1 class="titel">Overstappen is vlot en eenvoudig</h1>
         <h3 class="info">Wij houden je tijdens de overstap steeds per e-mail en sms op de hoogte.<br>Je hebt altijd 14 dagen bedenktijd. Hieronder zie je wat we vanaf nu voor je gaan doen en wanneer.</h3>
     </div>
     <div id="overstapPlan">
         <div class="steppingStone">
             <div class="stoneImage">
-                <img src="imagesVAL/email.png">
+                <img class="icons" src="imagesVAL/email.png">
             </div>
             <div class="stoneText">
                <p><b>Welkom!</b><br>Je krijgt van ons een e-mail ter bevestiging met jouw energiecontract en inloggegevens voor Mijn greenchoice.nl en onze Regelneef app.
@@ -119,7 +147,7 @@
         </div>
         <div class="steppingStone">
             <div class="stoneImage">
-                <img src="imagesVAL/trash.png">
+                <img class="icons" src="imagesVAL/trash.png">
             </div>
             <div class="stoneText">
                 <p><b>Opzeggen contract</b><br>We zeggen je vorige contract voor je op. Hoef je zelf niets voor te regelen. Doen we gewoon.
@@ -128,7 +156,7 @@
         </div>
         <div class="steppingStone">
             <div class="stoneImage">
-                <img src="imagesVAL/electricity.png">
+                <img class="icons" src="imagesVAL/electricity.png">
             </div>
             <div class="stoneText">
                 <p><b>Meterstanden</b><br>We zeggen je vorige contract voor je op. Hoef je zelf niets voor te regelen. Doen we gewoon.
@@ -137,7 +165,7 @@
         </div>
         <div class="steppingStone">
             <div class="stoneImage">
-                <img src="imagesVAL/house.png">
+                <img class="icons" src="imagesVAL/house.png">
             </div>
             <div class="stoneText">
                 <p><b>Start levering</b><br>We starten met de levering van onze 100% groene en voordelige stroom en gas.
@@ -145,6 +173,16 @@
             </div>            
         </div>
     </div>
+    <footer>
+        <div class="footerBox "> 
+            <h4> Contact: </h4>
+            <p>vragen@greenchoice.nl <br> 0 880 444 555 </p>
+        </div>
+        <div class="footerBox "> 
+            <h4> Adres: </h4>
+            <p> Herengracht 545, 1017 BW <br>Amsterdam<p>
+        </div>
+    </footer>
 </body>
 
 </html>
