@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>About us</title>
+    <link rel="stylesheet" type="text/css" href="green.css">
+     <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+     <link rel="shortcut icon" href="imagesGreen/favicon.jpg" type="image/x-icon">
+    <link rel="icon" href="imagesGreen/favicon.jpg" type="image/x-icon">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <script type="text/javascript" src="scrollup-master/dist/jquery.scrollUp.min.js"></script>
+</head>
+
+<body>
+    <nav class="topnav" id="myTopnav">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        <img class="homepageLogo" src="https://www.greenchoice.nl/images/logo.png">
+        <ul>
+            <li><a href="tarievenpage.html">Tarieven</a>
+                <ul>
+                    <li><a href="tarievenpage.html#besteBod">Ons beste bod</a></li>
+                    <li><a href="tarievenpage.html#poespas">Voordelig groen</a></li>
+                    <li><a href="tarievenpage.html#overstap">Overstappen</a></li>
+                </ul>
+            </li>
+            <li><a href="about.html">Over Ons</a></li>
+            <li><a href="Homepage/homepage.html">Home</a></li>
+            <li><a href="groeneEnergie.html">Groene Energie</a>
+                <ul>
+                    <li><a href="groeneEnergie.html#Sun">Sun Energy</a></li>
+                    <li><a href="groeneEnergie.html#Wind">Wind Energy</a></li>
+                    <li><a href="groeneEnergie.html#Bio">Bio Energy</a></li>
+                </ul>
+            </li>
+            
+            <button id="loginButton" onclick="window.location='homepage.html';"> INLOGGEN</button>
+        </ul>
+        </div>
+    </nav>
+    <section class="greenLabel">
+        <div class="row-line">
+            <article class="wrapper-text">
+                <img class="right" src="imagesGreen/valewis.jpg">
+                <div class="textDiv" id="right">
+                    <h2 class="GreenH2">Valerie </h2>
+                    <p class="text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+            </article>    
+        </div>
+    </section>
+    <section class="greenLabel">
+        <div class="row-line">
+            <article class="wrapper-text">
+                <img class="left" src="imagesGreen/randy.jpg">
+                <div class="textDiv">
+                    <h2 class="GreenH2">Randy</h2>
+                    <p class="text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div> 
+            </article>
+        </div>
+    </section>
+    <section class="greenLabel">
+        <div class="row-line">
+            <article class="wrapper-text">
+                <img class="right" src="imagesGreen/sil.jpg">
+                <div class="textDiv" id="right">
+                    <h2 class="GreenH2">Sil</h2>
+                    <p class="text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+            </article>    
+        </div>
+    </section>
+    <footer>
+        <div class="footerBox "> 
+            <h4> Contact: </h4>
+            <p>vragen@greenchoice.nl <br> 0 880 444 555 </p>
+        </div>
+        <div class="footerBox "> 
+            <h4> Adres: </h4>
+            <p> Herengracht 545, 1017 BW <br>Amsterdam<p>
+        </div>
+        <div>
+            
+        </div>
+    </footer>
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+<script type="text/javascript">
+    $(function () {
+    $.scrollUp({
+    scrollName: 'scrollUp', 
+    topDistance: '40', 
+    topSpeed: 300, 
+    animation: 'fade', 
+    animationInSpeed: 200, 
+    animationOutSpeed: 200, 
+    scrollText: 'Terug naar boven', 
+    activeOverlay: false, 
+  });
+});
+</script>
+</body>
+
+</html>
